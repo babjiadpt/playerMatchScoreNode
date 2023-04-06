@@ -1,0 +1,40 @@
+//Returns a list of all the players in the player table API
+GET http://localhost:3000/players
+
+###
+
+//Returns a specific player based on the player ID API
+GET http://localhost:3000/players/2/
+
+###
+
+//Updates the details of a specific player based on the player ID API
+PUT http://localhost:3000/players/2/
+Content-Type: application/json
+
+{
+  "playerName": "Raju"
+}
+
+###
+
+//Returns the match details of a specific match API
+GET http://localhost:3000/matches/18/
+
+###
+
+//Returns a list of all the matches of a player API
+GET http://localhost:3000/players/3/matches
+
+###
+
+//Returns a list of players of a specific match API
+
+GET http://localhost:3000/matches/16/players
+
+###
+
+//Returns the statistics of the total score, fours, sixes of a specific player based on the player ID API
+GET http://localhost:3000/players/1/playerScores
+
+###
